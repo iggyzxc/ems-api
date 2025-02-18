@@ -1,4 +1,7 @@
 package org.iggyzxc.emsapi.repository;
 
-public interface EmployeeRepository extends org.springframework.data.jpa.repository.JpaRepository<org.iggyzxc.emsapi.entity.employee, java.lang.Long> {
-  }
+import org.iggyzxc.emsapi.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+}
